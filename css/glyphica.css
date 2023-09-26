@@ -1,0 +1,24 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,700&display=swap');
+
+html{
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Kadwa, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* headings */
+
+
+/* colors */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #ff9533;
+}
