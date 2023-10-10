@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typographic Library – Glyphica</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="./css/glyphica.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="body">
     <header class="header header--relative">
@@ -14,15 +16,108 @@
             type="video/mp4">
         </video>
         <nav class="navbar">
+            <li><a class="navbar__link" href="index.html">Glyphica</a></li>
             <div>
-                <li><a class="navbar__link" href="index.html">Glyphica</a></li>
-                <li><a class="navbar__link" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-AlanFabik/blob/master/README.md">Implementation</a></li>
+                <li><a class="navbar__link" href="#headings">Headings</a></li>
+                <li><a class="navbar__link" href="#text">Text</a></li>                    
+                <li><a class="navbar__link" href="#lists">Lists</a></li>
+                <li><a class="navbar__link" href="#buttons">Buttons</a></li>
+                <li><a class="navbar__link" href="#tables">Tables</a></li>
+                <li><a class="navbar__link" href="#photos">Photos</a></li>
             </div>
-            <li><a class="navbar__link navbar__link--icon" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-AlanFabik">Download (GitHub)</a></li>
         </nav>
+        <div class="header__main">
+            <h1 class="">Typographic library <span class="break">for <span class="coloring--orange">your unique</span> project.</span></h1>
+            <a class="btn" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-AlanFabik">Download (GitHub)</a></li>
+        </div>
     </header>
     <main>
-        <h1>Typographic library for <span class="coloring--orange">your unique</span> project.</h1>
+        <section class="headings">
+            <h2>Headings</h2>
+                <p>Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. In the code sample below you can see how to implement heading in your code.</p>
+                <p>Use <code>&#60h1&#62</code>,<code>&#60h2&#62</code>,<code>&#60h3&#62</code>,<code>&#60h4&#62</code>,<code>&#60h5&#62</code>,<code>&#60h6&#62</code> tags for headings.</p>
+                <p class="h1--replace">This is h1</p>
+                <h2 class="h2--replace">This is h2</h2>
+                <h3>This is h3</h3>
+                <h4>This is h4</h4>
+                <h5 id="text">This is h5</h5>
+                <h6>This is h6</h6>
+            </section>
+            <section class="text">
+                <h2>Text</h2>
+                <p id="photo">Use <code>&#60p&#62</code> tag for a standart paragraph.</p>
+                <p>
+                    In the text you can use <b>bold effect</b> <code>&#60b&#62</code> and <a href="#">hypertext link</a> <code>&#60a&#62</code>.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.
+                </p>
+            </section>
+            <section class="lists" id="lists">
+                <h2>Lists</h2>
+                <div class="lists-wrapper">
+                    <div class="lists-wrapper-item">
+                        <h3>Ordered list</h3>
+                        <p>Use <code>&#60ol class="num"&#62</code> tag for an ordered list.</p>
+                        <ol class="num">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ol>
+                    </div>
+                    <div class="lists-wrapper-item">
+                        <h3>Unordered list</h3>
+                        <p>Use <code>&#60ul class="point"&#62</code> tag for an unordered list.</p>
+                        <ul class="point grey">
+                            <li>Text 1</li>
+                            <li>Text 2</li>
+                            <li>Text 3</li>
+                        </ul>
+                    </div>
+                    <p>Optionally, <code>class="grey"</code> transforms lists to grey background.</p>
+                </div>
+            </section>
+            <section class="buttons">
+                <h2>Buttons</h2>
+                <p>Buttons can be added with <code>class="button"</code></p>
+                <div class="buttons-wrapper">
+                    <div class="buttons-wrapper-item light-background">
+                        <p>Use <code>class="button-black"</code><br>tag for black button.</p>
+                        <a class="button button--black">Black</a>
+                    </div>
+                    <div class="buttons-wrapper-item dark-background">
+                        <p>Use <code>class="button-white"</code><br>tag for white button.</p>
+                        <a class="button button--white">White</a>
+                    </div>
+                </div>
+            </section>
+            <section class="tables" id="tables">
+                <h2>Tables</h2>
+                <p>Use <code>&#60table&#62</code> tag for a standart table.</p>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Title 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="photos">
+                <h2>Photos</h2>
+                <p>To use image template, modify your wrapper as <code>&#60div class="photos"&#62</code>
+                </p>
+                <div class="">
+                    <a href=""></a>
+                </div>
+            </section>
     </main>
+    <footer>
+        <p class="text text--typing">Unlock the potentional of <span class="typing"></span></p>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

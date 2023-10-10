@@ -1,21 +1,61 @@
 /* imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 html{
-    font-family: DM Sans, serif;
-    font-style: normal;
+    font-family: 'DM Sans', serif;
+    font-size: 16px;
     font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Kadwa, sans-serif;
     font-style: normal;
-    font-weight: 500;
 }
 
 /* headings */
+h1, .h1--replace, h2, .h2--replace, h3, h4, h5, h6 {
+    font-family: 'Kadwa', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-block: 1rem;
+}
 
+h1, .h1--replace {
+    font-size: 2.75rem;
+}
+
+h2, .h2--replace {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+ /* text */
+p {
+    margin-block: .5rem;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.875rem;
+    font-weight: 400;    
+    font-style: normal;
+ }
+
+ a {
+    color: #7e118e;
+ }
 
 /* colors */
 :root {
