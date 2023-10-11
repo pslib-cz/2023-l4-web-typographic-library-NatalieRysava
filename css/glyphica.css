@@ -131,6 +131,7 @@ ul li {
 :root {
     --white-color: #fff;
     --black-color: #000;
+    --grey-color: #dedede;
     --primary-color: #ff9533;
     --secondary-color: #932295;
 }

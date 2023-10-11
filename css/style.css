@@ -143,7 +143,7 @@ code {
 
 .button-box {
     display: inline-block;
-    background-color: #dedede;
+    background-color: var(--grey-color);
 }
 
 .button-box:has(.button--reversed) {
