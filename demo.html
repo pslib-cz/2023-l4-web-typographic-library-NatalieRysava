@@ -28,73 +28,73 @@
         </nav>
         <div class="header__main">
             <h1 class="">Typographic library <span class="break">for <span class="coloring--orange">your unique</span> project.</span></h1>
-            <a class="btn" href="https://github.com/pslib-cz/2022l4web-css-typographic-library-AlanFabik">Download (GitHub)</a></li>
+            <a class="button button--replace" href="https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/archive/refs/heads/master.zip">Download (GitHub)</a></li>
         </div>
     </header>
     <main>
         <section class="headings">
             <h2>Headings</h2>
                 <p>Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. In the code sample below you can see how to implement heading in your code.</p>
-                <p>Use <code>&#60h1&#62</code>,<code>&#60h2&#62</code>,<code>&#60h3&#62</code>,<code>&#60h4&#62</code>,<code>&#60h5&#62</code>,<code>&#60h6&#62</code> tags for headings.</p>
+                <p>Use <code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code> tags for headings.</p>
                 <p class="h1--replace">This is h1</p>
                 <h2 class="h2--replace">This is h2</h2>
-                <h3>This is h3</h3>
+                <h3 class="h3--replace">This is h3</h3>
                 <h4>This is h4</h4>
                 <h5 id="text">This is h5</h5>
                 <h6>This is h6</h6>
+                <p class="additional-text">Optionally, <code>class="underline"</code> underlines the heading to separate it from the rest of the content.</p>
             </section>
-            <section class="text">
+            <section class="text" id="text">
                 <h2>Text</h2>
-                <p id="photo">Use <code>&#60p&#62</code> tag for a standart paragraph.</p>
-                <p>
-                    In the text you can use <b>bold effect</b> <code>&#60b&#62</code> and <a href="#">hypertext link</a> <code>&#60a&#62</code>.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.
-                </p>
+                <p>Use the <code>&lt;p&gt;</code> tag for a standart paragraph.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.</p>
+                <h3>Styled text</h3>
+                <p>If you want to emphasize specific words in the text, you can use formatting effects such as <b>bold</b> using the <code>&lt;b&gt;</code> tag, or for greater importance <code>&lt;strong&gt;</code>. To format <em>italic</em> text, use <code>&lt;em&gt;</code> for emphasis and <code>&lt;i&gt;</code> for stylistic purposes. To <mark>highlight</mark> something, use the <code>&lt;mark&gt;</code> tag. Apply <code>&lt;a&gt;</code> to create a <a href="#">hypertext link</a> and use <code>&lt;s&gt;</code> to visually <s>strike out</s> text with a line through it, but <code>&lt;del&gt;</code> for defining <del>deleted</del> text.</p>
             </section>
             <section class="lists" id="lists">
                 <h2>Lists</h2>
-                <div class="lists-wrapper">
-                    <div class="lists-wrapper-item">
-                        <h3>Ordered list</h3>
-                        <p>Use <code>&#60ol class="num"&#62</code> tag for an ordered list.</p>
-                        <ol class="num">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ol>
-                    </div>
-                    <div class="lists-wrapper-item">
-                        <h3>Unordered list</h3>
-                        <p>Use <code>&#60ul class="point"&#62</code> tag for an unordered list.</p>
-                        <ul class="point grey">
-                            <li>Text 1</li>
-                            <li>Text 2</li>
-                            <li>Text 3</li>
-                        </ul>
-                    </div>
-                    <p>Optionally, <code>class="grey"</code> transforms lists to grey background.</p>
+                    <h3>Ordered list</h3>
+                    <p>The <code>&lt;ol&gt;</code> tag is used to create an ordered list. Combine it with the <code>&lt;li&gt;</code> tag to define the list items within the ordered list.</p>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3 with two sub-items
+                            <ol>
+                                <li>Sub-item 1</li>
+                                <li>Sub-item 2</li>
+                            </ol>
+                        </li>
+                        <li>Item 4</li>
+                    </ol>
+                    <h3>Unordered list</h3>
+                    <p>The <code>&lt;ul&gt;</code> tag is used to create an unordered list. Combine it with the <code>&lt;li&gt;</code> tag to define the list items within the unordered list.</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3 with two sub-items
+                            <ul>
+                                <li>Sub-item 1</li>
+                                <li>Sub-item 2</li>
+                            </ul>
+                        </li>
+                        <li>Item 4</li>
+                    </ul>
                 </div>
             </section>
             <section class="buttons">
                 <h2>Buttons</h2>
-                <p>Buttons can be added with <code>class="button"</code></p>
-                <div class="buttons-wrapper">
-                    <div class="buttons-wrapper-item light-background">
-                        <p>Use <code>class="button-black"</code><br>tag for black button.</p>
-                        <a class="button button--black">Black</a>
-                    </div>
-                    <div class="buttons-wrapper-item dark-background">
-                        <p>Use <code>class="button-white"</code><br>tag for white button.</p>
-                        <a class="button button--white">White</a>
-                    </div>
+                <p>Button is created using <code>class="button"</code> and is primarily intended for light backgrounds. You can achieve a hover effect by adding <code>class="button--hover"</code>.</p>
+                <div class="button-box">
+                    <a class="button button--hover" href="#">Button</a>
+                </div>
+                <p>To use the button on a dark background, add <code>"class: button--reversed"</code>.</p>
+                <div class="button-box">
+                    <a class="button button--reversed button--hover" href="#">Button</a>
                 </div>
             </section>
             <section class="tables" id="tables">
                 <h2>Tables</h2>
-                <p>Use <code>&#60table&#62</code> tag for a standart table.</p>
+                <p>Use <code>&lt;table&gt;</code> tag for a standart table.</p>
                 <table>
                     <tr>
                         <th>Title</th>
@@ -108,7 +108,7 @@
             </section>
             <section class="photos">
                 <h2>Photos</h2>
-                <p>To use image template, modify your wrapper as <code>&#60div class="photos"&#62</code>
+                <p>To use image template, modify your wrapper as <code>&lt;div class="photos"&gt;</code>
                 </p>
                 <div class="">
                     <a href=""></a>

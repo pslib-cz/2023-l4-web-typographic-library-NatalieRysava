@@ -1,21 +1,22 @@
 /* imported fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 html{
-    font-family: 'DM Sans', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
 }
 
 /* headings */
-h1, .h1--replace, h2, .h2--replace, h3, h4, h5, h6 {
-    font-family: 'Kadwa', sans-serif;
-    font-weight: 500;
+h1, .h1--replace, h2, .h2--replace, h3, .h3--replace, h4, h5, h6 {
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
     font-style: normal;
-    margin-block: 1rem;
+    line-height: 1;    
+    margin-block: 3rem 1rem;
 }
 
 h1, .h1--replace {
@@ -26,7 +27,7 @@ h2, .h2--replace {
     font-size: 2.25rem;
 }
 
-h3 {
+h3, .h3--replace {
     font-size: 2rem;
 }
 
@@ -43,7 +44,7 @@ h6 {
 }
  /* text */
 p {
-    margin-block: .5rem;
+    margin-block: .75rem;
 }
 
 code {
@@ -51,14 +52,85 @@ code {
     font-size: 0.875rem;
     font-weight: 400;    
     font-style: normal;
- }
+}
 
- a {
-    color: #7e118e;
- }
+a {
+    color: var(--secondary-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+b {
+    font-weight: 600;
+}
+
+mark {
+    background-color: var(--primary-color)
+}
+
+ol, ul {
+    padding-left: 2rem;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+/*ul:has(ul, ol), ol:has(ul, ol) {
+    margin-block: 2rem;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+    margin-block: 0;
+}
+
+ol li, ul li{
+    padding-block: 0.25rem;
+}
+
+li:has(ul), li:has(ol) {
+    padding-bottom: 0;
+}
+
+li:has(ul) li:first-of-type, li:has(ol) li:first-of-type {
+    padding-top: .5rem;
+}
+*/
+
+ol li::marker {
+    font-weight: 600;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+.button {
+    display: inline-block;
+    text-transform: lowercase;
+    color: var(--black-color);
+    border: 2px solid var(--black-color);
+    padding: .5rem 0.75rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+
+.button--reversed {
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+}
+
+.button:hover{
+    border: 2px solid var(--primary-color);
+    transition: 0.5s;
+}
+
 
 /* colors */
 :root {
-    --primary-color: #fff;
-    --secondary-color: #ff9533;
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #ff9533;
+    --secondary-color: #932295;
 }
