@@ -28,7 +28,6 @@
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: middle;
-    background-image: url(../icons/icon_download.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -38,10 +37,18 @@
     transition: 0.5s;
 }
 
+.navbar__link--icon-download::after {
+    background-image: url(../icons/icon_download.svg);
+}
+
+.navbar__link--icon-implementation::after {
+    background-image: url(../icons/icon_implementation.svg);
+}
+
 nav {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -82,7 +89,6 @@ footer .video-background {
 .navbar__link {
     color: var(--white-color);
     font-size: 1rem;
-    vertical-align: middle;
     padding: .5rem;
     margin: 0 .5rem;
     transition: 0.5s;
@@ -179,8 +185,13 @@ code {
     background-color: var(--black-color);
 }
 
-.navbar__link--icon:hover::after {
+.navbar__link--icon-download:hover::after {
     background-image: url(../icons/icon_download--hovered.svg);
+    transition: 0.5s;
+}
+
+.navbar__link--icon-implementation:hover::after {
+    background-image: url(../icons/icon_implementation--hovered.svg);
     transition: 0.5s;
 }
 
@@ -199,46 +210,37 @@ code {
     display: block;
 }
 
-@media screen and (max-width: 420px) {
-    .navbar-box {
-        display: flex;
-        flex-direction: column;
-        gap: .75rem;
-    }
-
-    table {
-        font-size: 0.75rem;
-    }
-
-    nav {
-        align-items: flex-start;
-    }
-}
-
-@media screen and (max-width: 680px) {
-
-    .navbar__link--icon {
-        font-size: 0;
-        padding: 0;
-        margin: 0;
-        padding-right: .5rem;
-        margin-right: .5rem;
-    }
-
-    .navbar__link--icon::after {
-        margin-left: 0;
-        margin-bottom: .1rem;
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 0rem;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .header {
         padding: 1rem;
     }
+
+    .navbar__link--icon::after {
+        margin-left: 0;
+        width: 0;
+        height: 0;
+    }
 }
+
+@media screen and (max-width: 560px) {
+    .navbar__link--icon {
+        font-size: 0;
+        margin: 0;
+    }
+
+    .navbar__link--icon::after {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    table {
+        font-size: 0.75rem;
+    }
+}
+
 
 .h2--replace {
     border-bottom: none;
