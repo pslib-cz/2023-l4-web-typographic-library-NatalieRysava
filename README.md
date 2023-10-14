@@ -44,7 +44,9 @@ The predefined colors can be changed by `:root` selector.
 ### Headings
 Use `<h1`>, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags for headings. Optionally, `class="underline"` underlines the heading to separate it from the rest of the content.
 ### Text
-A standard paragraph is defined by `<p>` tag, but you can apply also:
+A standard paragraph is defined by `<p>` tag.
+
+You can apply also:
 * Bold text – `<b>` for stylistic purposes or `<strong>` for greater importance
 * Italic text – `<i>` for stylistic purposes or `<em>` for emphasis
 * Highlighted text – `<mark>`
@@ -86,8 +88,9 @@ You can use predefined table with standart `<table>` tag.
 To use image template, modify your wrapper as `<div class="photos>`
 ### Buttons
 Button is created by adding `class="button"` to the `<a>` or `<button>` tag.
+
 There are two types of predefined buttons:
-* For light backgrounds – `<a class="button">`
+* For light background – `<a class="button">`
 * For dark background – `<a class="button button--reversed">`
 ## Dependecies
 ...
