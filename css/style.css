@@ -203,9 +203,15 @@ code {
     .navbar-box {
         display: flex;
         flex-direction: column;
+        gap: .75rem;
     }
+
     table {
         font-size: 0.75rem;
+    }
+
+    nav {
+        align-items: flex-start;
     }
 }
 
