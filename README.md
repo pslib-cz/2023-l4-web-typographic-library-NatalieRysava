@@ -101,4 +101,4 @@ There are two types of predefined buttons:
 * For light background – `<table>` without any class
 * For dark background – `<table class="table--reversed">`
 ### Photos
-Use the `<img>` tag to insert an image. If you want to create an image gallery, add `class="gallery"` to the wrapper.
+Use the `<img>` tag inside a `<figure>` to insert an image. If you want to create an image gallery, add `class="gallery"` to the wrapper.
