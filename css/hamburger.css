@@ -102,10 +102,6 @@
     section {
         margin: 1.5rem;
     }
-
-    .header {
-        padding: 1rem;
-    }
 }
 
 @media screen and (width: 768px) {

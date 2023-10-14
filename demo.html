@@ -38,7 +38,7 @@
         </div>
     </header>
     <main>
-        <section class="headings">
+        <section id="headings">
             <h2>Headings</h2>
                 <p>Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. In the code sample below you can see how to implement heading in your code.</p>
                 <p>Use <code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code> tags for headings.</p>
@@ -50,14 +50,14 @@
                 <h6>This is h6</h6>
                 <p class="additional-text">Optionally, <code>class="underline"</code> underlines the heading to separate it from the rest of the content.</p>
             </section>
-            <section class="text" id="text">
+            <section id="text">
                 <h2>Text</h2>
                 <p>Use the <code>&lt;p&gt;</code> tag for a standard paragraph.</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.</p>
                 <h3>Styled text</h3>
                 <p>If you want to emphasize specific words in the text, you can use formatting effects such as <b>bold</b> using the <code>&lt;b&gt;</code> tag, or for greater importance <code>&lt;strong&gt;</code>. To format <em>italic</em> text, use <code>&lt;em&gt;</code> for emphasis and <code>&lt;i&gt;</code> for stylistic purposes. To <mark>highlight</mark> something, use the <code>&lt;mark&gt;</code> tag. Apply <code>&lt;a&gt;</code> to create a <a href="#">hypertext link</a> and use <code>&lt;s&gt;</code> to visually <s>strike out</s> text with a line through it, but <code>&lt;del&gt;</code> for defining <del>deleted</del> text.</p>
             </section>
-            <section class="lists" id="lists">
+            <section id="lists">
                 <h2>Lists</h2>
                     <h3>Ordered list</h3>
                     <p>The <code>&lt;ol&gt;</code> tag is used to create an ordered list. Combine it with the <code>&lt;li&gt;</code> tag to define the list items within the ordered list.</p>
@@ -87,7 +87,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="buttons">
+            <section id="buttons">
                 <h2>Buttons</h2>
                 <p>Button is created using <code>class="button"</code> and is primarily intended for light backgrounds. You can achieve a hover effect by adding <code>class="button--hover"</code>.</p>
                 <div class="button-box">
@@ -98,7 +98,7 @@
                     <a class="button button--reversed button--hover" href="#">Button</a>
                 </div>
             </section>
-            <section class="tables" id="tables">
+            <section id="tables">
                 <h2>Tables</h2>
                 <p>Use the <code>&lt;table&gt;</code> tag for a standard table on light backgrounds. Include <code>&lt;th&gt;</code> tags to create cells containing data labels, whether in a row or column, and <code>&lt;td&gt;</code> to create cells containing specific data in a table.</p>
                 <table>
@@ -107,24 +107,24 @@
                         Table
                       </caption>
                       <tr>
-                        <th>Column label 1</th>
-                        <th>Column label 2</th>
-                        <th>Column label 3</th>
+                        <th>Column label&nbsp;1</th>
+                        <th>Column label&nbsp;2</th>
+                        <th>Column label&nbsp;3</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th>Row label 1</th>
+                        <th>Row label&nbsp;1</th>
+                        <td>Data</td>
+                        <td>Data</td>&nbsp;
+                      </tr>
+                      <tr>
+                        <th>Row label&nbsp;2</th>
                         <td>Data</td>
                         <td>Data</td>
                       </tr>
                       <tr>
-                        <th>Row label 2</th>
-                        <td>Data</td>
-                        <td>Data</td>
-                      </tr>
-                      <tr>
-                        <th>Row label 3</th>
+                        <th>Row label&nbsp;3</th>
                         <td>Data</td>
                         <td>Data</td>
                       </tr>
@@ -137,31 +137,31 @@
                         Table
                       </caption>
                       <tr>
-                        <th>Column label 1</th>
-                        <th>Column label 2</th>
-                        <th>Column label 3</th>
+                        <th>Column label&nbsp;1</th>
+                        <th>Column label&nbsp;2</th>
+                        <th>Column label&nbsp;3</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th>Row label 1</th>
+                        <th>Row label&nbsp;1</th>
                         <td>Data</td>
                         <td>Data</td>
                       </tr>
                       <tr>
-                        <th>Row label 2</th>
+                        <th>Row label&nbsp;2</th>
                         <td>Data</td>
                         <td>Data</td>
                       </tr>
                       <tr>
-                        <th>Row label 3</th>
+                        <th>Row label&nbsp;3</th>
                         <td>Data</td>
                         <td>Data</td>
                       </tr>
                     </tbody>
                 </table>
             </section>
-            <section class="photos">
+            <section id="photos">
                 <h2>Photos</h2>
                 <p>To insert an image into your HTML page, use the <code>&lt;img&gt;</code> tag.</p>
                 <h3>Single image</h3>
