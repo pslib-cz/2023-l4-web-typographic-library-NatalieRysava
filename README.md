@@ -7,6 +7,13 @@ Glyphica.css is a free typographic library that you can implement into your HTML
 With Glyphica.css, there's no need to create a new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.
 
 **Simply download the file and link it via stylesheet to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!**
+## Download
+1. Download **[glyphica.css](https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/blob/main/css/glyphica.css)**
+2. Add CSS file to Visual Studio Code
+3. Link CSS file via stylesheet in your document's head section
+```html
+<link href="glyphica.css" rel="stylesheet">
+```
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2023-l4-web-typographic-library-NatalieRysava/)** site for preview.
 ## Signpost
@@ -82,16 +89,20 @@ Use either `<ol>` or `<ul>` as appropriate, in combination with `<li>` tags for 
     <li>Item 4</li>
 </ul>
 ```
-### Tables
-You can use predefined table with standart `<table>` tag.
-### Photos
-To use image template, modify your wrapper as `<div class="photos>`
 ### Buttons
 Button is created by adding `class="button"` to the `<a>` or `<button>` tag.
 
 There are two types of predefined buttons:
 * For light background – `<a class="button">`
 * For dark background – `<a class="button button--reversed">`
+### Tables
+Use the `<table>` tag for a standard table.
+
+There are two types of predefined buttons:
+* For light background – `<table>` without any class
+* For dark background – `<table class="table--reversed">`
+### Photos
+Use the `<img>` tag to insert an image. If you want to create an image gallery, add `class="gallery"` to the wrapper.
 ## Dependecies
 ...
 ## Implementation
