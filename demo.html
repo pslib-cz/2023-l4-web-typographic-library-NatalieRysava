@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="./css/glyphica.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
 </head>
 <body class="body">
     <header class="header header--relative">
@@ -16,15 +17,20 @@
             type="video/mp4">
         </video>
         <nav class="navbar">
-            <li><a class="navbar__link" href="index.html">Glyphica</a></li>
-            <div>
+            <a class="navbar__link" href="index.html">Glyphica</a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                 <li><a class="navbar__link" href="#headings">Headings</a></li>
                 <li><a class="navbar__link" href="#text">Text</a></li>                    
                 <li><a class="navbar__link" href="#lists">Lists</a></li>
                 <li><a class="navbar__link" href="#buttons">Buttons</a></li>
                 <li><a class="navbar__link" href="#tables">Tables</a></li>
                 <li><a class="navbar__link" href="#photos">Photos</a></li>
-            </div>
+            </menu>
+            <a class="hamburger-menu " href="javascript:void(0)">
+                <span class="hamburger-menu__line"></span>
+                <span class="hamburger-menu__line"></span>
+                <span class="hamburger-menu__line"></span>
+            </a>
         </nav>
         <div class="header__main">
             <h1 class="">Typographic library <span class="break">for <span class="coloring--orange">your unique</span> project.</span></h1>
@@ -46,7 +52,7 @@
             </section>
             <section class="text" id="text">
                 <h2>Text</h2>
-                <p>Use the <code>&lt;p&gt;</code> tag for a standart paragraph.</p>
+                <p>Use the <code>&lt;p&gt;</code> tag for a standard paragraph.</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.</p>
                 <h3>Styled text</h3>
                 <p>If you want to emphasize specific words in the text, you can use formatting effects such as <b>bold</b> using the <code>&lt;b&gt;</code> tag, or for greater importance <code>&lt;strong&gt;</code>. To format <em>italic</em> text, use <code>&lt;em&gt;</code> for emphasis and <code>&lt;i&gt;</code> for stylistic purposes. To <mark>highlight</mark> something, use the <code>&lt;mark&gt;</code> tag. Apply <code>&lt;a&gt;</code> to create a <a href="#">hypertext link</a> and use <code>&lt;s&gt;</code> to visually <s>strike out</s> text with a line through it, but <code>&lt;del&gt;</code> for defining <del>deleted</del> text.</p>
@@ -94,30 +100,110 @@
             </section>
             <section class="tables" id="tables">
                 <h2>Tables</h2>
-                <p>Use <code>&lt;table&gt;</code> tag for a standart table.</p>
+                <p>Use the <code>&lt;table&gt;</code> tag for a standard table on light backgrounds. Include <code>&lt;th&gt;</code> tags to create cells containing data labels, whether in a row or column, and <code>&lt;td&gt;</code> to create cells containing specific data in a table.</p>
                 <table>
-                    <tr>
-                        <th>Title</th>
-                        <th>Title 2</th>
-                    </tr>
-                    <tr>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                    </tr>
+                    <thead>
+                      <caption class="table__caption">
+                        Table
+                      </caption>
+                      <tr>
+                        <th>Column label 1</th>
+                        <th>Column label 2</th>
+                        <th>Column label 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Row label 1</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                      <tr>
+                        <th>Row label 2</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                      <tr>
+                        <th>Row label 3</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p>To use the table on a dark background, add <code>"class: table--reversed"</code>.</p>
+                <table class="table--reversed">
+                    <thead>
+                      <caption class="table__caption">
+                        Table
+                      </caption>
+                      <tr>
+                        <th>Column label 1</th>
+                        <th>Column label 2</th>
+                        <th>Column label 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Row label 1</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                      <tr>
+                        <th>Row label 2</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                      <tr>
+                        <th>Row label 3</th>
+                        <td>Data</td>
+                        <td>Data</td>
+                      </tr>
+                    </tbody>
                 </table>
             </section>
             <section class="photos">
                 <h2>Photos</h2>
-                <p>To use image template, modify your wrapper as <code>&lt;div class="photos"&gt;</code>
-                </p>
-                <div class="">
-                    <a href=""></a>
+                <p>To insert an image into your HTML page, use the <code>&lt;img&gt;</code> tag.</p>
+                <h3>Single image</h3>
+                <figure>
+                    <a href="imgs/Img 1.jpg"><img class="galerry__images" src="imgs/Img 1.jpg" alt="Colorful parrot"/></a>
+                    <figcaption>Colorful parrot</figcaption>
+                </figure>
+                <h3>Gallery</h3>
+                <p>To use the image gallery template, add <code>class="gallery"</code> to your wrapper.</p>
+                <div class="gallery">
+                    <figure>
+                        <a href="imgs/Img 2.jpg"><img class="galerry__images" src="imgs/Img 2.jpg" alt="Purple snake"/></a>
+                        <figcaption>Purple snake</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="imgs/Img 3.jpg"><img class="galerry__images" src="imgs/Img 3.jpg" alt="Orange flower"/></a>
+                        <figcaption>Orange flower</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="imgs/Img 4.jpg"><img class="galerry__images" src="imgs/Img 4.jpg" alt="Sea waves at sunset"/></a>
+                        <figcaption>Sea waves at sunset</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="imgs/Img 1.jpg"><img class="galerry__images" src="imgs/Img 1.jpg" alt="Colorful parrot"/></a>
+                        <figcaption>Colorful parrot</figcaption>
+                    </figure>
                 </div>
             </section>
     </main>
     <footer>
-        <p class="text text--typing">Unlock the potentional of <span class="typing"></span></p>
+        <video autoplay muted loop plays-inline class="video-background">
+            <source src="background-video.MP4"
+            type="video/mp4">
+        </video>
+        <h2 class="text text--typing">Unlock the potentional of <span class="typing"></span></h2>
+        <p>Created by <b>Natálie Ryšavá</b>, a fourth-year student of the Technical Lyceum.</p>
+        <p class="text text--school-logo">SPŠ a VOŠ Liberec</p>
+        <a class="button button--reversed" href="mailto:natalie.rysava@pslib.cz">Contact me</a>
+        <h2>About project</h2>
+        <p>Glyphica.css is a free typographic library. It was created for as a school project. You don't need to make new CSS file every time you start new project. Glyphica.css helps you style your headings, special text markups, lists, basic tables, images and buttons. It's responsible and cros-browser friendly.</p>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

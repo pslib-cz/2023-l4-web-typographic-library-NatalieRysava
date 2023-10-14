@@ -50,8 +50,33 @@ nav {
     display: inline-block;
 }
 
-section {
+section{
     margin: 2.5rem;
+}
+
+footer {
+    padding: 2.5rem;
+    position: relative;
+}
+
+footer h2 {
+    border-bottom: 0;
+    color: var(--white-color);
+}
+
+footer p {
+    color: var(--white-color);
+}
+
+
+footer .video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .navbar__link {
@@ -119,8 +144,12 @@ code {
     text-transform: lowercase;
 }
 
+.typing {
+    color: var(--primary-color);
+}
+
 .text--typing {
-    text-transform: lowercase;
+    margin-top: 1rem;
 }
 
 .coloring--orange {
@@ -165,6 +194,7 @@ code {
     object-fit: cover;
 }
 
+
 .break {
     display: block;
 }
@@ -185,4 +215,38 @@ code {
 
 .h2--replace {
     border-bottom: none;
+}
+
+table {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--grey-color);
+}
+
+
+.table--reversed {
+    background-color: var(--black-color);
+}
+
+figure {
+    max-width: 600px;
+}
+
+.text--school-logo::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    background-image: url(../icons/icon_school-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    margin-right: .5rem;
+    margin-bottom: .2rem;
+}
+
+footer .button {
+    margin-inline: 0;
 }
