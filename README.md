@@ -51,7 +51,7 @@ A standard paragraph is defined by `<p>` tag, but you can apply also:
 * Hypertext link – `<a>`
 * Strikethrough – `<s>` for stylistic purposes or `<del>` for defining deleted text
 ### Lists
-Use either <ol> or <ul>as appropriate, in combination with `<li>` tags for a structured list.
+Use either `<ol>` or `<ul>` as appropriate, in combination with `<li>` tags for a structured list.
 * Ordered list – `<ol>`
 ```html
 <ol>
