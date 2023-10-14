@@ -40,7 +40,7 @@
     <main>
         <section id="headings">
             <h2>Headings</h2>
-                <p>Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure. In the code sample below you can see how to implement heading in your code.</p>
+                <p>Search engines use headings to index the structure of web pages. On the contrary, it helps users in browsing and understanding the content of the page.</p>
                 <p>Use <code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code> tags for headings.</p>
                 <p class="h1--replace">This is h1</p>
                 <h2 class="h2--replace">This is h2</h2>
@@ -59,8 +59,9 @@
             </section>
             <section id="lists">
                 <h2>Lists</h2>
+                <p>Use either <code>&lt;ol&gt;</code> or <code>&lt;ul&gt;</code> as appropriate, in combination with <code>&lt;li&gt;</code> tags for a structured list.</p>
                     <h3>Ordered list</h3>
-                    <p>The <code>&lt;ol&gt;</code> tag is used to create an ordered list. Combine it with the <code>&lt;li&gt;</code> tag to define the list items within the ordered list.</p>
+                    <p>The <code>&lt;ol&gt;</code> tag is used to create an ordered list. </p>
                     <ol>
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -73,7 +74,7 @@
                         <li>Item 4</li>
                     </ol>
                     <h3>Unordered list</h3>
-                    <p>The <code>&lt;ul&gt;</code> tag is used to create an unordered list. Combine it with the <code>&lt;li&gt;</code> tag to define the list items within the unordered list.</p>
+                    <p>The <code>&lt;ul&gt;</code> tag is used to create an unordered list.</p>
                     <ul>
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -89,13 +90,13 @@
             </section>
             <section id="buttons">
                 <h2>Buttons</h2>
-                <p>Button is created using <code>class="button"</code> and is primarily intended for light backgrounds. You can achieve a hover effect by adding <code>class="button--hover"</code>.</p>
+                <p>Button is created by adding <code>class="button"</code> to the <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> tag and is primarily intended for light backgrounds.
                 <div class="button-box">
-                    <a class="button button--hover" href="#">Button</a>
+                    <a class="button" href="#">Button</a>
                 </div>
                 <p>To use the button on a dark background, add <code>"class: button--reversed"</code>.</p>
                 <div class="button-box">
-                    <a class="button button--reversed button--hover" href="#">Button</a>
+                    <a class="button button--reversed" href="#">Button</a>
                 </div>
             </section>
             <section id="tables">

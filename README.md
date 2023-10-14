@@ -9,8 +9,18 @@ With Glyphica.css, there's no need to create a new CSS file for every project, b
 **Simply download the file and link it via stylesheet to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!**
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2023-l4-web-typographic-library-NatalieRysava/)** site for preview.
+## Signpost
+1. [Download](#Download)
+2. [Font](#Font)
+3. [Colors](#Colors)
+4. [Headings](#Headings)
+5. [Text](#Text)
+6. [Photos](#Photos)
+7. [Buttons](#Buttons)
+8. [Lists](#Lists)
+9. [Tables](#Tables)
 ## Font
-Glyphica.css is using three linked Google fonts – **Montserrat** for html, **Kadwa** for headings and **Source Code Pro** for codes. You can change them, simply remove predefined font and paste yours.
+Glyphica.css is using three linked Google fonts – **Montserrat** as main for html, **Kadwa** for headings and **Source Code Pro** for codes. You can change them, simply remove predefined font and paste yours.
 ```html
 /* imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;600&display=swap');
@@ -29,12 +39,59 @@ The predefined colors can be changed by `:root` selector.
     --secondary-color: #932295;
 }
 ```
+
+## Components
+### Headings
+Use `<h1`>, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags for headings. Optionally, `class="underline"` underlines the heading to separate it from the rest of the content.
+### Text
+A standard paragraph is defined by `<p>` tag, but you can apply also:
+* Bold text – `<b>` for stylistic purposes or `<strong>` for greater importance
+* Italic text – `<i>` for stylistic purposes or `<em>` for emphasis
+* Highlighted text – `<mark>`
+* Hypertext link – `<a>`
+* Strikethrough – `<s>` for stylistic purposes or `<del>` for defining deleted text
+### Lists
+Use either <ol> or <ul>as appropriate, in combination with `<li>` tags for a structured list.
+* Ordered list – `<ol>`
+```html
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3 with two sub-items
+        <ol>
+            <li>Sub-item 1</li>
+            <li>Sub-item 2</li>
+        </ol>
+    </li>
+    <li>Item 4</li>
+</ol>
+```
+* Unordered list – `<ul>`
+```html
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3 with two sub-items
+        <ul>
+            <li>Sub-item 1</li>
+            <li>Sub-item 2</li>
+        </ul>
+    </li>
+    <li>Item 4</li>
+</ul>
+```
+### Tables
+You can use predefined table with standart `<table>` tag.
+### Photos
+To use image template, modify your wrapper as `<div class="photos>`
+### Buttons
+Button is created by adding `class="button"` to the `<a>` or `<button>` tag.
+There are two types of predefined buttons:
+* For light backgrounds – `<a class="button">`
+* For dark background – `<a class="button button--reversed">`
 ## Dependecies
 ...
 ## Implementation
 ...
 ## Usage
 ...
-## Components
-### First
-### Second
