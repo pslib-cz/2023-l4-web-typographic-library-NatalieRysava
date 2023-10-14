@@ -17,15 +17,14 @@ With Glyphica.css, there's no need to create a new CSS file for every project, b
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2023-l4-web-typographic-library-NatalieRysava/)** site for preview.
 ## Signpost
-1. [Download](#Download)
-2. [Font](#Font)
-3. [Colors](#Colors)
-4. [Headings](#Headings)
-5. [Text](#Text)
-6. [Photos](#Photos)
-7. [Buttons](#Buttons)
-8. [Lists](#Lists)
-9. [Tables](#Tables)
+1. [Font](#Font)
+2. [Colors](#Colors)
+3. [Headings](#Headings)
+4. [Text](#Text)
+5. [Lists](#Lists)
+6. [Buttons](#Buttons)
+7. [Tables](#Tables)
+8. [Photos](#Photos)
 ## Font
 Glyphica.css is using three linked Google fonts – **Montserrat** as main for html, **Kadwa** for headings and **Source Code Pro** for codes. You can change them, simply remove predefined font and paste yours.
 ```html
@@ -103,9 +102,3 @@ There are two types of predefined buttons:
 * For dark background – `<table class="table--reversed">`
 ### Photos
 Use the `<img>` tag to insert an image. If you want to create an image gallery, add `class="gallery"` to the wrapper.
-## Dependecies
-...
-## Implementation
-...
-## Usage
-...
