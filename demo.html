@@ -19,49 +19,49 @@
         </video>
         <nav class="navbar">
             <a class="navbar__link" href="index.html">Glyphica</a>
-            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                <li><a class="navbar__link" href="#headings">Headings</a></li>
-                <li><a class="navbar__link" href="#text">Text</a></li>                    
-                <li><a class="navbar__link" href="#lists">Lists</a></li>
-                <li><a class="navbar__link" href="#buttons">Buttons</a></li>
-                <li><a class="navbar__link" href="#tables">Tables</a></li>
-                <li><a class="navbar__link" href="#photos">Photos</a></li>
+            <menu class="navbar-list navbar-list--hidden hamburger-menu-list">
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#headings">Headings</a></li>
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#text">Text</a></li>                    
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#lists">Lists</a></li>
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#buttons">Buttons</a></li>
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#tables">Tables</a></li>
+                <li class="navbar-list__item"><a class="navbar-list__link" href="#photos">Photos</a></li>
             </menu>
-            <a class="hamburger-menu " href="javascript:void(0)">
+            <a class="hamburger-menu" href="javascript:void(0)">
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
                 <span class="hamburger-menu__line"></span>
             </a>
         </nav>
         <div class="header__main">
-            <h1 class="">Typographic library <span class="break">for <span class="coloring--orange">your unique</span> project.</span></h1>
+            <h1 class="h1">Typographic library <span class="text--break">for <span class="text--orange">your unique</span> project.</span></h1>
             <a class="button button--replace" href="https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/archive/refs/heads/master.zip">Download (GitHub)</a>
         </div>
     </header>
-    <main>
-        <section id="headings">
-            <h2>Headings</h2>
+    <main class="main">
+        <section class="main__section section" id="headings">
+            <h2 class="h2">Headings</h2>
                 <p>Search engines use headings to index the structure of web pages. On the contrary, it helps users in browsing and understanding the content of the page.</p>
                 <p>Use <code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code> tags for headings.</p>
                 <p class="h1--replace">This is h1</p>
                 <h2 class="h2--replace">This is h2</h2>
                 <h3 class="h3--replace">This is h3</h3>
-                <h4>This is h4</h4>
-                <h5>This is h5</h5>
-                <h6>This is h6</h6>
-                <p class="additional-text">Optionally, <code>class="underline"</code> underlines the heading to separate it from the rest of the content.</p>
+                <h4 class="h4--replace">This is h4</h4>
+                <h5 class="h5--replace">This is h5</h5>
+                <h6 class="h6--replace">This is h6</h6>
+                <p class="text--additional">Optionally, <code>class="underline"</code> underlines the heading to separate it from the rest of the content.</p>
             </section>
-            <section id="text">
-                <h2>Text</h2>
+            <section class="section" id="text">
+                <h2 class="h2">Text</h2>
                 <p>Use the <code>&lt;p&gt;</code> tag for a standard paragraph.</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.</p>
                 <h3>Styled text</h3>
                 <p>If you want to emphasize specific words in the text, you can use formatting effects such as <b>bold</b> using the <code>&lt;b&gt;</code> tag, or for greater importance <code>&lt;strong&gt;</code>. To format <em>italic</em> text, use <code>&lt;em&gt;</code> for emphasis and <code>&lt;i&gt;</code> for stylistic purposes. To <mark>highlight</mark> something, use the <code>&lt;mark&gt;</code> tag. Apply <code>&lt;a&gt;</code> to create a <a href="#">hypertext link</a> and use <code>&lt;s&gt;</code> to visually <s>strike out</s> text with a line through it, but <code>&lt;del&gt;</code> for defining <del>deleted</del> text.</p>
             </section>
-            <section id="lists">
-                <h2>Lists</h2>
+            <section class="main__section section" id="lists">
+                <h2 class="h2">Lists</h2>
                 <p>Use either <code>&lt;ol&gt;</code> or <code>&lt;ul&gt;</code> as appropriate, in combination with <code>&lt;li&gt;</code> tags for a structured list.</p>
-                    <h3>Ordered list</h3>
+                    <h3 class="h3">Ordered list</h3>
                     <p>The <code>&lt;ol&gt;</code> tag is used to create an ordered list. </p>
                     <ol>
                         <li>Item 1</li>
@@ -74,7 +74,7 @@
                         </li>
                         <li>Item 4</li>
                     </ol>
-                    <h3>Unordered list</h3>
+                    <h3 class="h3">Unordered list</h3>
                     <p>The <code>&lt;ul&gt;</code> tag is used to create an unordered list.</p>
                     <ul>
                         <li>Item 1</li>
@@ -88,8 +88,8 @@
                         <li>Item 4</li>
                     </ul>
             </section>
-            <section id="buttons">
-                <h2>Buttons</h2>
+            <section class="main__section section" id="buttons">
+                <h2 class="h2">Buttons</h2>
                 <p>Button is created by adding <code>class="button"</code> to the <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> tag and is primarily intended for light background.
                 <div class="button-box">
                     <a class="button" href="#">Button</a>
@@ -99,10 +99,10 @@
                     <a class="button button--reversed" href="#">Button</a>
                 </div>
             </section>
-            <section id="tables">
-                <h2>Tables</h2>
+            <section class="main__section section" id="tables">
+                <h2 class="h2">Tables</h2>
                 <p>Use the <code>&lt;table&gt;</code> tag for a standard table on light backgrounds. Include <code>&lt;th&gt;</code> tags to create cells containing data labels, whether in a row or column, and <code>&lt;td&gt;</code> to create cells containing specific data in a table.</p>
-                <table>
+                <table class="table">
                     <caption class="table__caption">
                         Table
                     </caption>
@@ -132,7 +132,7 @@
                     </tbody>
                 </table>
                 <p>To use the table on a dark background, add <code>class:"table--reversed"</code>.</p>
-                <table class="table--reversed">
+                <table class="table table--reversed">
                     <caption class="table__caption">
                         Table
                     </caption>
@@ -162,51 +162,55 @@
                     </tbody>
                 </table>
             </section>
-            <section id="photos">
-                <h2>Photos</h2>
+            <section class="main__section section" id="photos">
+                <h2 class="h2">Photos</h2>
                 <p>To insert an image, use the <code>&lt;img&gt;</code> tag inside a <code>&lt;figure&gt;</code>.</p>
-                <h3>Single image</h3>
-                <figure>
+                <h3 class="h3">Single image</h3>
+                <figure class="picture-box">
                     <a href="imgs/img-1.jpg"><img src="imgs/img-1.jpg" alt="Colorful parrot"></a>
                     <figcaption>Colorful parrot</figcaption>
                 </figure>
-                <h3>Gallery</h3>
+                <h3 class="h3">Gallery</h3>
                 <p>To use the image gallery template, add <code>class="gallery"</code> to the wrapper.</p>
                 <div class="gallery">
-                    <figure>
+                    <figure class="picture-box">
                         <a href="imgs/img-2.jpg"><img src="imgs/img-2.jpg" alt="Purple snake"></a>
                         <figcaption>Purple snake</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="picture-box">
                         <a href="imgs/img-3.jpg"><img src="imgs/img-3.jpg" alt="Orange flower"></a>
                         <figcaption>Orange flower</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="picture-box">
                         <a href="imgs/img-4.jpg"><img src="imgs/img-4.jpg" alt="Sea waves at sunset"></a>
                         <figcaption>Sea waves at sunset</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="picture-box">
                         <a href="imgs/img-1.jpg"><img src="imgs/img-1.jpg" alt="Colorful parrot"></a>
                         <figcaption>Colorful parrot</figcaption>
                     </figure>
                 </div>
             </section>
     </main>
-    <footer>
+    <footer class="footer">
         <video autoplay muted loop class="video-background">
             <source src="background-video.MP4"
             type="video/mp4">
         </video>
-        <h2 class="text text--typing">Unlock the potentional of <span class="typing"></span></h2>
-        <p>Created by <b>Natálie Ryšavá</b>, a fourth-year student of the Technical Lyceum.</p>
-        <p class="text text--school-logo">SPŠ a VOŠ Liberec</p>
-        <a class="button button--reversed" href="mailto:natalie.rysava@pslib.cz">Contact me</a>
-        <h2>About project</h2>
-        <p>Glyphica.css is a free typographic library that you can implement into your HTML code. It was created as a school project and offers a valuable solution to streamline your web development process.</p>
-        <p>With Glyphica.css, there's no need to create a new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.</p>
-        <p>Simply download the file and link it via stylesheet to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!</p>
+        <section class="footer__section section">
+            <h2 class="h2 h2--margin-top-1rem footer__h2">Unlock the potentional of <span class="text--typing text--orange"></span></h2>
+            <p class="footer__text">Created by <b>Natálie Ryšavá</b>, a fourth-year student of the Technical Lyceum.</p>
+            <p class="text--school-logo footer__text">SPŠ a VOŠ Liberec</p>
+            <a class="button button--reversed button--inline-margin-0" href="mailto:natalie.rysava@pslib.cz">Contact me</a>
+        </section>
+        <section class="footer__section section">
+            <h2 class="h2 h2--margin-top-1rem footer__h2">About project</h2>
+            <p class="footer__text">Glyphica.css is a free typographic library that you can implement into your HTML code. It was created as a school project and offers a valuable solution to streamline your web development process.</p>
+            <p class="footer__text">With Glyphica.css, there's no need to create a new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.</p>
+            <p class="footer__text">Simply download the file and link it via stylesheet to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!</p>
+        </section>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/typing-script.js"></script>
     <script src="./js/hamburger.js"></script>
 </body>
 </html>

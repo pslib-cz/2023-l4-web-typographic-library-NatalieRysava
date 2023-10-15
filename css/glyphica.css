@@ -11,23 +11,23 @@ html{
 }
 
 /* headings */
-h1, .h1--replace, h2, .h2--replace, h3, .h3--replace, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Kadwa', serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1;    
-    margin-block: 3rem 1rem;
+    margin-block: 2rem 1rem;
 }
 
-h1, .h1--replace {
+h1 {
     font-size: 2.75rem;
 }
 
-h2, .h2--replace {
+h2 {
     font-size: 2.25rem;
 }
 
-h3, .h3--replace {
+h3 {
     font-size: 2rem;
 }
 
@@ -42,6 +42,11 @@ h5 {
 h6 {
     font-size: 1.25rem;
 }
+
+.underline {
+    border-bottom: solid 4px var(--secondary-color);
+}
+
  /* text */
 p {
     margin-block: .75rem;
@@ -52,6 +57,7 @@ code {
     font-size: 0.875rem;
     font-weight: 400;    
     font-style: normal;
+    color: var(--primary-color);
 }
 
 a {
@@ -75,27 +81,6 @@ ol, ul {
 li {
     line-height: 1.5rem;
 }
-
-/*ul:has(ul, ol), ol:has(ul, ol) {
-    margin-block: 2rem;
-}
-
-ul ul, ol ol, ul ol, ol ul {
-    margin-block: 0;
-}
-
-ol li, ul li{
-    padding-block: 0.25rem;
-}
-
-li:has(ul), li:has(ol) {
-    padding-bottom: 0;
-}
-
-li:has(ul) li:first-of-type, li:has(ol) li:first-of-type {
-    padding-top: .5rem;
-}
-*/
 
 ol li::marker {
     font-weight: 600;
@@ -136,7 +121,7 @@ ul li {
     --secondary-color: #932295;
 }
 
-/* TABLE*/
+/* tables*/
 
 .table__caption {
     font-family: 'Kadwa', serif;
@@ -245,6 +230,7 @@ figcaption {
     background: linear-gradient(to bottom, transparent, var(--primary-color));
     opacity: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 figure:hover figcaption {
@@ -257,15 +243,3 @@ figure:hover figcaption {
     font-size: .875rem;
     padding: 10% 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-

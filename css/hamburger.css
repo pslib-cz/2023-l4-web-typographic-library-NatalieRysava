@@ -1,16 +1,9 @@
+/* hidden hamburger-menu */
 .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: inherit;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0;
-    width: 30px;
-    height: 18px;
-    position: relative;
-    margin-right: 1rem;
+    display: none;
 }
+
+/* creating a hamburger menu icon */
 
 .hamburger-menu__line {
     position: absolute;
@@ -33,16 +26,21 @@
     bottom: 0px;
 }
 
-@media screen and (min-width: 768px) {
-    .hamburger-menu {
-        display: none;
-    }
-}
+/* media queries */
 
-@media screen and (max-width: 768px)  {    
-    .navbar__menu--hidden {
-        opacity: 0;
-        z-index: -1;
+@media screen and (max-width: 768px)  {  
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: inherit;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0;
+        width: 30px;
+        height: 18px;
+        position: relative;
+        margin-right: 1rem;
     }
 
     .hamburger-menu--active .hamburger-menu__line {
@@ -68,15 +66,14 @@
         transition: bottom 1s, transform .5s .5s;
     }
 
-    .header--relative:has(.hamburger-menu--active) {
-        position: static;
+    /* hidden navbar-list */
+    
+    .navbar-list--hidden {
+        opacity: 0;
+        z-index: -1;
     }
 
-    .header--relative:has(.hamburger-menu--active) .video-background {
-        z-index: 0;
-    }
-
-    .navbar__menu {
+    .navbar-list {
         position: absolute;
         left: 0;
         top: 0;
@@ -91,21 +88,17 @@
         gap: 4rem;
     }
 
-    body:has(.hamburger-menu--active) {
+    /* background */
+
+    .body:has(.hamburger-menu--active) {
         overflow: hidden;
     }
 
-    footer {
-        padding: 1.5rem;
+    .header--relative:has(.hamburger-menu--active) {
+        position: static;
     }
 
-    section {
-        margin: 1.5rem;
-    }
-}
-
-@media screen and (width: 768px) {
-    .navbar__menu--hidden {
-        transform: translateY(0);
+    .header--relative:has(.hamburger-menu--active) .video-background {
+        z-index: 0;
     }
 }
