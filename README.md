@@ -32,6 +32,25 @@ Glyphica.css is using three linked Google fonts – **Montserrat** as main for h
 @import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* linked fonts */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kadwa', serif;
+}
+
+caption {
+    font-family: 'Kadwa', serif;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
 ```
 ## Colors
 The predefined colors can be changed by `:root` selector.

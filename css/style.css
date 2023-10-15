@@ -93,7 +93,6 @@
 /* navbar */
 
 .navbar {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -190,17 +189,6 @@
 
 .footer__text {
     color: var(--white-color);
-}
-
-
-.footer__video-background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 /* index.html content */
