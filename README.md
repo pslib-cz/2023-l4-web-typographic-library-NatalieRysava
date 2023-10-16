@@ -2,9 +2,9 @@
 # Typography CSS library
 **Author:** [Natálie Ryšavá](https://github.com/NatalieRysava)
 ## Description
-Glyphica.css is a free typographic library that you can implement into your HTML code. It was created as a school project and offers a valuable solution to streamline your web development process.
+Glyphica.css is a&nbsp;free typographic library that you can implement into your HTML code. It was created as a&nbsp;school project and offers a&nbsp;valuable solution to streamline your web development process.
 
-With Glyphica.css, there's no need to create a new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.
+With Glyphica.css, there's no need to create a&nbsp;new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.
 
 **Simply download the file and link it via stylesheet to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!**
 ## Download
@@ -78,7 +78,7 @@ You can apply also:
 * Hypertext link – `<a>`
 * Strikethrough – `<s>` for stylistic purposes or `<del>` for defining deleted text
 ### Lists
-Use either `<ol>` or `<ul>` as appropriate, in combination with `<li>` tags for a structured list.
+Use either `<ol>` or `<ul>` as appropriate, in combination with `<li>` tags for a&nbsp;structured list.
 * Ordered list – `<ol>`
 ```html
 <ol>
@@ -114,20 +114,20 @@ There are two types of predefined buttons:
 * For light background – `<a class="button">`
 * For dark background – `<a class="button button--reversed">`
 ### Tables
-Use the `<table>` tag for a standard table.
+Use the `<table>` tag for a&nbsp;standard table.
 
 There are two types of predefined buttons:
 * For light background – `<table>` without any class
 * For dark background – `<table class="table--reversed">`
 ### Photos
 * Single image
-Use the `<img>` tag inside a `<figure>` to insert an image.
+Use the `<img>` tag inside a&nbsp;`<figure>` to insert a&nbsp;image.
 
 * Gallery
-If you want to create an image gallery, add `class="gallery"` to the wrapper.
+If you want to create a&nbsp;image gallery, add `class="gallery"` to the wrapper.
 
 #### Recommendation
-To enhance the functionality of your gallery and enable smooth, arrow-driven photo navigation, I highly suggest considering the utilization of **[the lightgallery folder]()**," a powerful image gallery solution developed by **Sachin Neravath**. You can conveniently acquire it from its official **[website](https://www.lightgalleryjs.com/)**, or directly from the project's **[GitHub repository](https://github.com/sachinchoolur/lightGallery)**. This tool enhances your gallery with an interactive, scrollable interface for engaging photo exploration.
+To enhance the functionality of your gallery and enable smooth, arrow-driven photo navigation, I highly suggest considering the utilization of **[the lightgallery folder](https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/tree/main/lightgallery)**, a&nbsp;powerful image gallery solution developed by **Sachin Neravath**. You can conveniently acquire it from its official **[website](https://www.lightgalleryjs.com/)**, or directly from the project's **[GitHub repository](https://github.com/sachinchoolur/lightGallery)**. This tool enhances your gallery with a&nbsp;interactive, scrollable interface for engaging photo exploration.
 
 Don't forget to link it via stylesheet in your document's head section. In my opinion, it is optimal to attach these files that support zoom, thumbnails, autoplay and other functions.
 ```html
@@ -140,7 +140,7 @@ Don't forget to link it via stylesheet in your document's head section. In my op
     <script src="lightgallery/plugins/zoom/lg-zoom.min.js"></script>
     <script src="lightgallery/plugins/autoplay/lg-autoplay.min.js"></script>
 ```
-For functionality, you need to add a script behind your <footer> tag.
+You need to add a&nbsp;script after the `<footer>` tag for the feature to work. If you have specific scripts linked in your document's head section, all corresponding plugins should be listed there.
 ```html
     <script type="text/javascript">
         lightGallery(
