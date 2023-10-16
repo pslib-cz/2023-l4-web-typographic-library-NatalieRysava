@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="./css/glyphica.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-autoplay.css">
+    <script src="lightgallery/lightgallery.min.js"></script>
+    <script src="lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="lightgallery/plugins/autoplay/lg-autoplay.min.js"></script>
     <link rel="icon" type="image/x-icon" href="icons/favicon.svg">
 </head>
 <body class="body">
@@ -210,6 +218,14 @@
             <p class="footer__text">Simply <b>download the file and link it via stylesheet</b> to your document's head section. The CSS file is fully responsive and compatible with all major browsers. Explore and enjoy!</p>
         </section>
     </footer>
+    <script type="text/javascript">
+        lightGallery(
+            document.querySelector(".gallery"), {
+            plugins: [lgZoom, lgThumbnail, lgAutoplay],
+            speed: 500,
+            selector: ".picture-box > a"
+        });
+    </script>
     <script src="./js/typing-script.js"></script>
     <script src="./js/hamburger.js"></script>
 </body>

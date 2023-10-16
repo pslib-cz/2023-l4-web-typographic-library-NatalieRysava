@@ -120,4 +120,34 @@ There are two types of predefined buttons:
 * For light background – `<table>` without any class
 * For dark background – `<table class="table--reversed">`
 ### Photos
-Use the `<img>` tag inside a `<figure>` to insert an image. If you want to create an image gallery, add `class="gallery"` to the wrapper.
+* Single image
+Use the `<img>` tag inside a `<figure>` to insert an image.
+
+* Gallery
+If you want to create an image gallery, add `class="gallery"` to the wrapper.
+
+#### Recommendation
+To enhance the functionality of your gallery and enable smooth, arrow-driven photo navigation, I highly suggest considering the utilization of **[the lightgallery folder]()**," a powerful image gallery solution developed by **Sachin Neravath**. You can conveniently acquire it from its official **[website](https://www.lightgalleryjs.com/)**, or directly from the project's **[GitHub repository](https://github.com/sachinchoolur/lightGallery)**. This tool enhances your gallery with an interactive, scrollable interface for engaging photo exploration.
+
+Don't forget to link it via stylesheet in your document's head section. In my opinion, it is optimal to attach these files that support zoom, thumbnails, autoplay and other functions.
+```html
+    <link rel="stylesheet" href="lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-thumbnail.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-zoom.css">
+    <link rel="stylesheet" href="lightgallery/css/lg-autoplay.css">
+    <script src="lightgallery/lightgallery.min.js"></script>
+    <script src="lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="lightgallery/plugins/autoplay/lg-autoplay.min.js"></script>
+```
+For functionality, you need to add a script behind your <footer> tag.
+```html
+    <script type="text/javascript">
+        lightGallery(
+            document.querySelector(".gallery"), {
+            plugins: [lgZoom, lgThumbnail, lgAutoplay],
+            speed: 500,
+            selector: ".gallery > figure > a"
+        });
+    </script>
+```
