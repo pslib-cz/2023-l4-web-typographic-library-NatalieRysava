@@ -72,7 +72,14 @@ The predefined colors can be changed by `:root` selector.
 }
 ```
 ## Headings
-Use `<h1`>, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags for headings. Optionally, `class="underline"` underlines the heading to separate it from the rest of the content.
+Use `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags for headings. Optionally, `class="underline"` underlines the heading to separate it from the rest of the content.
+
+* `<h1>` – 2.75rem
+* `<h2>` – 2.25rem
+* `<h3>` – 2rem
+* `<h4>` – 1.75rem
+* `<h5>` – 1.5rem
+* `<h6>` – 1.25.75rem
 ## Text
 A standard paragraph is defined by `<p>` tag.
 ### Styled text
