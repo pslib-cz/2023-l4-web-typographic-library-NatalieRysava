@@ -74,6 +74,7 @@ The predefined colors can be changed by `:root` selector.
 ## Headings
 Use `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` tags for headings. Optionally, `class="underline"` underlines the heading to separate it from the rest of the content.
 
+Font sizes are:
 * `<h1>` – 2.75rem
 * `<h2>` – 2.25rem
 * `<h3>` – 2rem
