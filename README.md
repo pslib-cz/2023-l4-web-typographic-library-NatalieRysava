@@ -2,7 +2,7 @@
 # Typography CSS library
 **Author:** [Natálie Ryšavá](https://github.com/NatalieRysava)
 ## Description
-Glyphica.css is a&nbsp;free typographic library that you can implement into your HTML code. It was created as a&nbsp;school project and offers a&nbsp;valuable solution to streamline your web development process.
+Glyphica.css is **a&nbsp;free typographic library** that you can implement into your HTML code. It was created as a&nbsp;school project and offers a&nbsp;valuable solution to streamline your web development process.
 
 With Glyphica.css, there's no need to create a&nbsp;new CSS file for every project, because it provides pre-designed styles for headings, special text markups, lists, buttons, basic tables, images, and even image galleries.
 
