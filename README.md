@@ -27,7 +27,7 @@ Link to **[demo](https://pslib-cz.github.io/2023-l4-web-typographic-library-Nata
 ## Implementation
 1. Download **[glyphica.css](https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/blob/main/css/glyphica.css)**
 2. Add CSS file in your project's folder
-3. Open it in Visual Studio Code 
+3. Open your project in Visual Studio Code 
 3. Link CSS file via stylesheet in your document's head section
 ```html
 <link href="glyphica.css" rel="stylesheet">
