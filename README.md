@@ -85,11 +85,11 @@ Font sizes are:
 A standard paragraph is defined by `<p>` tag.
 ### Styled text
 You can apply:
-* Bold text – `<b>` for stylistic purposes or `<strong>` for greater importance
-* Italic text – `<i>` for stylistic purposes or `<em>` for emphasis
-* Highlighted text – `<mark>`
-* Hypertext link – `<a>`
-* Strikethrough – `<s>` for stylistic purposes or `<del>` for defining deleted text
+* `<b>` (stylistic purposes) or `<strong>` (greater importance) – bold text
+* `<i>` (stylistic purposes) or `<em>` (emphasis) – italic text
+* `<mark>` – highlighted text
+* `<a>` – hypertext link
+* `<s>` (stylistic purposes) or `<del>` (defining deleted text) – strikethrough
 ## Lists
 Use either `<ol>` or `<ul>` as appropriate, in combination with `<li>` tags for a&nbsp;structured list.
 * Ordered list – `<ol>`
