@@ -130,7 +130,7 @@ There are two types of predefined buttons:
 Use the `<img>` tag inside a&nbsp;`<figure>` to insert a&nbsp;image.
 
 * Gallery
-If you want to create a&nbsp;image gallery, add `class="gallery"` to the wrapper.
+If you want to create a&nbsp;image gallery, add `class="gallery"` to the wrapper. After hovering the `<figure>` tag, a figcaption will be revealed.
 
 ### Recommendation
 To enhance the functionality of your gallery and enable smooth, arrow-driven photo navigation, I highly suggest considering the utilization of **[the lightgallery folder](https://github.com/pslib-cz/2023-l4-web-typographic-library-NatalieRysava/tree/main/lightgallery)**, a&nbsp;powerful image gallery solution developed by **Sachin Neravath**. You can conveniently acquire it from its official **[website](https://www.lightgalleryjs.com/)**, or directly from the project's **[GitHub repository](https://github.com/sachinchoolur/lightGallery)**. This tool enhances your gallery with a&nbsp;interactive, scrollable interface for engaging photo exploration.
